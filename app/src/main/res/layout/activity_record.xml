@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pcm.record.activity.RecordActivity">
+
+    <ListView
+        android:id="@+id/recordList"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#88FFFFFF"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="80dip"
+            android:layout_height="48dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:text="@string/record"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:text="Title"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:text="00:00"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:layout_marginBottom="1dip"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+
+            <Spinner
+                android:id="@+id/pcm"
+                android:layout_width="80dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="1dip"
+                android:layout_marginBottom="1dip"
+                android:entries="@array/pcm_arrays"
+                />
+            <Spinner
+                android:id="@+id/quality"
+                android:layout_width="80dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="1dip"
+                android:layout_marginBottom="1dip"
+                android:layout_centerInParent="true"
+                android:entries="@array/quality_arrays"
+                />
+            <Spinner
+                android:id="@+id/channel"
+                android:layout_width="80dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="1dip"
+                android:layout_marginBottom="1dip"
+                android:layout_centerInParent="true"
+                android:entries="@array/channel_arrays"
+                />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="110dip"
+            android:layout_height="150dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="1dip"
+            android:layout_marginBottom="1dip"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/play"
+                android:layout_width="90dip"
+                android:layout_height="48dip"
+                android:text="@string/play"
+                android:layout_marginTop="20dip"
+                android:layout_marginLeft="10dip"
+                />
+            <Button
+                android:id="@+id/continuePlay"
+                android:layout_width="90dip"
+                android:layout_height="48dip"
+                android:layout_marginTop="20dip"
+                android:text="@string/playcontinue"
+                android:layout_marginLeft="10dip"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

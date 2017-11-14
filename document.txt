@@ -1,0 +1,32 @@
+
+SoundRecorder Class
+
+1. Local Variable Value
+baseDir		: Save Directory
+RECORDING_RATE	: Recording Sampling Rate
+CHANNEL_IN	: Sound Recorder PCM Input Channel
+CHANNELS_OUT	: Sound Play PCM Output Channel
+FORMAT		: Sound PCM Format(8bit or 16bit)
+BUFFER_SIZE	: Buffer Size fo Recording and Playing PCM File
+
+2. Functions
+- startRecording()
+Recording Start function
+Multiple PCM recording and convert wav file.
+
+- stopRecording()
+Stop Recording.
+In here, Stop Recording PCM File.
+At that time, SoundRecorder AsynTask will stop PCM Recording and Save wav file
+
+- startPlay()
+The function which play the saved PCM File and Wav File.
+
+- stopPlaying()
+The function which stop Playing PCM File and Wav File.
+
+- startAllPlay()
+The function which start to play all saved PCM File and wav File.
+
+- rawToWave()
+The function which save all Recorded PCM file to Wav File.

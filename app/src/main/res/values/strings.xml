@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SampleRecord</string>
+    <string name="record">Record</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="playcontinue">AllPlay</string>
+    <string-array name="pcm_arrays">
+        <item>PCM16</item>
+        <item>PCM8</item>
+    </string-array>
+    <string-array name="quality_arrays">
+        <item>Base</item>
+        <item>Low</item>
+        <item>High</item>
+        <item>Superior</item>
+    </string-array>
+    <string-array name="channel_arrays">
+        <item>Mono</item>
+        <item>Stereo</item>
+    </string-array>
+</resources>
